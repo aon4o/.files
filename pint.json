@@ -4,7 +4,12 @@
         "no_superfluous_phpdoc_tags": false,
         "ordered_imports": {
             "sort_algorithm": "alpha",
-            "imports_order": ["class", "const", "function"]
-        }
+            "imports_order": [
+                "class",
+                "const",
+                "function"
+            ]
+        },
+        "not_operator_with_successor_space": true
     }
 }
