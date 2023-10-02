@@ -7,7 +7,7 @@ sudo apt autoremove -y
 sudo apt autoclean -y
 
 # Installing some apps
-sudo apt install -y git-all redis-server
+sudo apt install -y git-all redis-server wget apt-transport-https curl software-properties-common ca-certificates gnupg
 
 # Installing Snap, Snap Store, Caprine, RocketChat
 sudo rm /etc/apt/preferences.d/nosnap.pref
@@ -16,28 +16,20 @@ sudo snap install snap-store
 sudo snap install caprine
 sudo snap install rocketchat-desktop
 
-# Installing 'wget' for downloading packages directly from the web
-sudo apt-get install wget
+# Downloading packages directly from the web
 wget -bq -O insomnia.deb https://updates.insomnia.rest/downloads/ubuntu/latest?&app=com.insomnia.app&source=website
 wget -bq -O jetbrains_toolbox.tar.gz https://download.jetbrains.com/toolbox/jetbrains-toolbox-1.24.12080.tar.gz
 wget -bq -O discord.deb https://discord.com/api/download?platform=linux&format=deb
 wget -bg -O next_cloud.deb https://github.com/nextcloud/desktop/releases/download/v3.5.1/Nextcloud-3.5.1-x86_64.AppImage
 wget -bg -O thunderbird.tar.bz2 https://download.mozilla.org/?product=thunderbird-91.10.0-SSL&os=linux64&lang=en-US
 
-# Installing 'curl' and 'Brave'
-sudo apt install apt-transport-https curl
-
+# Installing 'Brave Browser'
 sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
-
 echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list
-
 sudo apt update
-
 sudo apt install brave-browser -y
 
-
 # Installing PHP and Composer
-sudo apt install software-properties-common
 sudo add-apt-repository ppa:ondrej/php
 sudo apt update
 sudo apt install php7.4 -y
@@ -56,7 +48,6 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
 nvm i stable
 
 # Installing Docker
-sudo apt install apt-transport-https ca-certificates curl gnupg -y
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker.gpg
 echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu jammy stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 sudo apt update -y
