@@ -33,8 +33,7 @@ sudo apt install brave-browser -y
 # Installing PHP and Composer
 sudo add-apt-repository ppa:ondrej/php
 sudo apt update
-sudo apt install php7.4 -y
-sudo apt install libapache2-mod-php8.2 -y
+sudo apt install libapache2-mod-php -y
 sudo apt install php php-redis php-dompdf php-xml php-http php-zip php-curl -y
 sudo systemctl restart apache2
 
