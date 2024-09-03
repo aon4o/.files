@@ -3,7 +3,7 @@ Repository for custom scripts and dot files.
 
 ## .files
 
-* [`.bashrc`](.bashrc) - Bash terminal configuration
+* [`.bash_aliases`](.bash_aliases) - Custom Bash aliases
 * [`.zshrc`](.zshrc) - ZShell configuration
 * [`.p10k.zsh`](.p10k.zsh) - Power10K ZShell Theme configuration
 * [`.huskyrc`](.huskyrc) - Husky pre-commit configuration
