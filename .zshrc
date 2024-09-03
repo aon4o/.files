@@ -113,4 +113,5 @@ source $ZSH/oh-my-zsh.sh
 
 # Custom Aliases
 alias sail="./vendor/bin/sail"
+alias pa="artisan"
 alias a="artisan"
