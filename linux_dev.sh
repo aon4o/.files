@@ -12,9 +12,7 @@ sudo apt install -y git-all redis-server wget apt-transport-https curl software-
 # Installing Snap, Snap Store, Caprine, RocketChat
 sudo rm /etc/apt/preferences.d/nosnap.pref
 sudo apt install snapd
-sudo snap install snap-store
-sudo snap install caprine
-sudo snap install rocketchat-desktop
+sudo snap install snap-store rocketchat-desktop caprine
 
 # Downloading packages directly from the web
 wget -bq -O insomnia.deb https://updates.insomnia.rest/downloads/ubuntu/latest?&app=com.insomnia.app&source=website
