@@ -21,6 +21,7 @@ wget -bq -O discord.deb https://discord.com/api/download?platform=linux&format=d
 wget -bq -O vencord.sh https://raw.githubusercontent.com/Vendicated/VencordInstaller/main/install.sh
 wget -bq -O next_cloud.deb https://github.com/nextcloud/desktop/releases/download/v3.5.1/Nextcloud-3.5.1-x86_64.AppImage
 wget -bq -O thunderbird.tar.bz2 https://download.mozilla.org/?product=thunderbird-91.10.0-SSL&os=linux64&lang=en-US
+wget -bq -O steam.deb https://cdn.akamai.steamstatic.com/client/installer/steam.deb
 
 # Installing 'Brave Browser'
 sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
