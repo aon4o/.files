@@ -7,7 +7,8 @@ sudo apt autoremove -y
 sudo apt autoclean -y
 
 # Installing some apps
-sudo apt install -y git-all redis-server wget apt-transport-https curl software-properties-common ca-certificates gnupg
+sudo add-apt-repository ppa:danielrichter2007/grub-customizer
+sudo apt install -y git-all redis-server wget apt-transport-https curl software-properties-common ca-certificates gnupg grub-customizer
 
 # Installing Snap, Snap Store, Caprine, RocketChat
 sudo rm /etc/apt/preferences.d/nosnap.pref
