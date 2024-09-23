@@ -34,7 +34,7 @@ sudo apt install brave-browser -y
 sudo add-apt-repository ppa:ondrej/php
 sudo apt update
 sudo apt install libapache2-mod-php -y
-sudo apt install php php-redis php-raphf php-xml php-http php-zip php-curl -y
+sudo apt install php php-redis php-raphf php-xml php-http php-zip php-curl php-gmp php-intl php-pspell php-soap php-ldap php-gd -y
 sudo systemctl restart apache2
 
 php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
