@@ -15,13 +15,14 @@ sudo rm /etc/apt/preferences.d/nosnap.pref
 sudo apt install snapd
 sudo snap install snap-store rocketchat-desktop caprine
 
+flatpak install flathub org.mozilla.Thunderbird
+
 # Downloading packages directly from the web
 wget -bq -O insomnia.deb https://updates.insomnia.rest/downloads/ubuntu/latest?&app=com.insomnia.app&source=website
 wget -bq -O jetbrains_toolbox.tar.gz https://download.jetbrains.com/toolbox/jetbrains-toolbox-2.4.2.32922.tar.gz
 wget -bq -O discord.deb https://discord.com/api/download?platform=linux&format=deb
 wget -bq -O vencord.sh https://raw.githubusercontent.com/Vendicated/VencordInstaller/main/install.sh
 wget -bq -O next_cloud.deb https://github.com/nextcloud/desktop/releases/download/v3.5.1/Nextcloud-3.5.1-x86_64.AppImage
-wget -bq -O thunderbird.tar.bz2 https://download.mozilla.org/?product=thunderbird-91.10.0-SSL&os=linux64&lang=en-US
 wget -bq -O steam.deb https://cdn.akamai.steamstatic.com/client/installer/steam.deb
 
 # Installing 'Brave Browser'
