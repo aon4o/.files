@@ -15,8 +15,7 @@ sudo rm /etc/apt/preferences.d/nosnap.pref
 sudo apt install snapd
 sudo snap install snap-store rocketchat-desktop caprine
 
-flatpak install flathub org.mozilla.Thunderbird
-flatpak install flathub com.discordapp.Discord
+flatpak install flathub -y org.mozilla.Thunderbird com.discordapp.Discord
 
 # Downloading packages directly from the web
 wget -bq -O insomnia.deb https://updates.insomnia.rest/downloads/ubuntu/latest?&app=com.insomnia.app&source=website
