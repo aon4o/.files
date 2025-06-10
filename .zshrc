@@ -78,7 +78,10 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git colorize command-not-found composer emoji git-auto-fetch nvm pep8 pip pipenv python redis-cli virtualenv artisan laravel laravel-sail)
+plugins=(git colorize command-not-found emoji git-auto-fetch redis-cli)
+plugins+=(npm zsh-better-npm-completion nvm zsh-nvm)
+plugins+=(pep8 pip pipenv python virtualenv)
+plugins+=(composer artisan laravel laravel-sail)
 
 source $ZSH/oh-my-zsh.sh
 
