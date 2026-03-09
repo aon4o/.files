@@ -10,10 +10,10 @@ sudo apt autoclean -y
 sudo add-apt-repository ppa:danielrichter2007/grub-customizer
 sudo apt install -y git-all redis-server wget apt-transport-https curl software-properties-common ca-certificates gnupg grub-customizer solaar
 
-# Installing Snap, Snap Store, Caprine, RocketChat
+# Installing Snap, Snap Store, RocketChat
 sudo rm /etc/apt/preferences.d/nosnap.pref
 sudo apt install snapd
-sudo snap install snap-store rocketchat-desktop caprine
+sudo snap install snap-store rocketchat-desktop
 
 flatpak install flathub -y org.mozilla.Thunderbird com.discordapp.Discord
 
