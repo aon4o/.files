@@ -12,6 +12,7 @@ Repository for custom scripts and dot files.
 
 * [`display_setup.sh`](display_setup.sh) - 3 displays configuration script (Debian distros)
 * [`linux_dev.sh`](linux_dev.sh) - Dev environment installation script (Debian)
+* [`sysinfo.sh`](sysinfo.sh) - Bash script printing cleanly formatted System Info.
 
 ## Config files
 
